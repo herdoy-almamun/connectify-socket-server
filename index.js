@@ -8,7 +8,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: process.env.ORIGIN,
+    origin: "https://connectify-me.netlify.app",
     methods: ["GET", "POST"],
   },
 });
